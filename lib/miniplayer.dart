@@ -54,6 +54,16 @@ class Miniplayer extends StatefulWidget {
   ///Collapse by tapping anywhere in the miniplayer.
    final bool tapToCollapse;
 
+
+   ///Collapse by tapping anywhere in the miniplayer.
+   final double positionedLeft;
+
+   ///Collapse by tapping anywhere in the miniplayer.
+   final double positionedRight;
+
+   ///Collapse by tapping anywhere in the miniplayer.
+   final double positionedBottom;
+
   const Miniplayer({
     Key? key,
     required this.minHeight,
@@ -68,6 +78,9 @@ class Miniplayer extends StatefulWidget {
     this.onDismissed,
     this.controller,
     this.tapToCollapse = true,
+    this.positionedLeft = 0.0,
+    this.positionedRight = 0.0,
+    this.positionedBottom = 0.0,
   }) : super(key: key);
 
   @override
@@ -176,6 +189,7 @@ class _MiniplayerState extends State<Miniplayer> with TickerProviderStateMixin {
               (widget.maxHeight - widget.minHeight);
 
           return Stack(
+          
             alignment: Alignment.bottomCenter,
             children: [
               if (_percentage > 0)
