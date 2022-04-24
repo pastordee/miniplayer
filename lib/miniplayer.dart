@@ -676,8 +676,10 @@ class _MiniplayerAudioState extends State<MiniplayerAudio> with TickerProviderSt
                     child: Container(color: widget.backgroundColor),
                   ),
                 ),
-              Align(
-                alignment: Alignment.bottomCenter,
+              Positioned(
+                left: widget.positionedLeft,
+                right:widget.positionedRight,
+                bottom:widget.positionedBottom,
                 child: SizedBox(
                   height: height,
                   width: widget.width,
@@ -1103,8 +1105,10 @@ class _MiniplayerLinkState extends State<MiniplayerLink> with TickerProviderStat
                     child: Container(color: widget.backgroundColor),
                   ),
                 ),
-              Align(
-                alignment: Alignment.bottomCenter,
+              Positioned(
+                left: widget.positionedLeft,
+                right:widget.positionedRight,
+                bottom:widget.positionedBottom,
                 child: SizedBox(
                   height: height,
                   width: widget.width,
@@ -1529,8 +1533,10 @@ class _MiniplayerVideoState extends State<MiniplayerVideo> with TickerProviderSt
                     child: Container(color: widget.backgroundColor),
                   ),
                 ),
-              Align(
-                alignment: Alignment.bottomCenter,
+              Positioned(
+                left: widget.positionedLeft,
+                right:widget.positionedRight,
+                bottom:widget.positionedBottom,
                 child: SizedBox(
                   height: height,
                   width: widget.width,
