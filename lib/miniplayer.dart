@@ -203,8 +203,11 @@ class _MiniplayerState extends State<Miniplayer> with TickerProviderStateMixin {
                     child: Container(color: widget.backgroundColor),
                   ),
                 ),
-              Align(
-                alignment: Alignment.bottomCenter,
+              Positioned(
+                left: widget.positionedLeft,
+                right:widget.positionedRight,
+                bottom:widget.positionedBottom,
+                // alignment: Alignment.bottomCenter,
                 child: SizedBox(
                   height: height,
                   width: widget.width,
