@@ -663,7 +663,9 @@ class _MiniplayerAudioState extends State<MiniplayerAudio> with TickerProviderSt
           var _percentage = ((height - widget.minHeight)) /
               (widget.maxHeight - widget.minHeight);
 
-          return Stack(
+          return ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0), 
+                    child:Stack(
           
             alignment: Alignment.bottomCenter,
             children: [
@@ -796,7 +798,7 @@ class _MiniplayerAudioState extends State<MiniplayerAudio> with TickerProviderSt
                 ),
               ),
             ],
-          );
+          ));
         },
       ),
     );
@@ -1092,7 +1094,9 @@ class _MiniplayerLinkState extends State<MiniplayerLink> with TickerProviderStat
           var _percentage = ((height - widget.minHeight)) /
               (widget.maxHeight - widget.minHeight);
 
-          return Stack(
+          return ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0), 
+                    child:Stack(
           
             alignment: Alignment.bottomCenter,
             children: [
@@ -1225,7 +1229,7 @@ class _MiniplayerLinkState extends State<MiniplayerLink> with TickerProviderStat
                 ),
               ),
             ],
-          );
+      ));
         },
       ),
     );
@@ -1520,7 +1524,9 @@ class _MiniplayerVideoState extends State<MiniplayerVideo> with TickerProviderSt
           var _percentage = ((height - widget.minHeight)) /
               (widget.maxHeight - widget.minHeight);
 
-          return Stack(
+          return ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0), 
+                    child:Stack(
           
             alignment: Alignment.bottomCenter,
             children: [
@@ -1653,7 +1659,7 @@ class _MiniplayerVideoState extends State<MiniplayerVideo> with TickerProviderSt
                 ),
               ),
             ],
-          );
+          ));
         },
       ),
     );
